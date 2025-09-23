@@ -1,0 +1,75 @@
+$main-color: #fb607f;
+$text-color: #c71585;
+$h-size: 25px;
+
+
+@mixin rounded-corners($radius) {
+  border-radius: $radius;
+}
+
+body { 
+    background-color: #ffc0cb; 
+    color: #c71585;
+}
+
+header {
+    background: url(https://wallpaper.forfun.com/fetch/05/05c78ddf5d51c067b06693f05cc8be67.jpeg);
+    color: $text-color;
+    padding: 10px;
+
+    h1 {
+        font-size: $h-size;
+        color: $text-color;
+        margin: 0;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+
+            li {
+                display: inline-block;
+                margin-right: 17px;
+
+                a {
+                    color: $text-color;
+                    font-weight: bold;
+
+                    &:hover {
+                        background-color: ($main-color, 10%);
+                    }
+                }
+
+                &::before {
+                    content: '\27A4';
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+h2 {
+    font-size: $h-size;
+}
+
+p {
+    line-height: 2;
+}
+
+img {
+    display: block;
+    border: 3px solid #fff;
+    @include rounded-corners(15px);
+}
+
+.btn {
+    background-color: $main-color;
+    color: $text-color;
+    cursor: pointer;
+    @include rounded-corners(15px);
+
+    &:hover {
+    background-color: darken($main-color, 10%);
+  }
+}
