@@ -1,7 +1,11 @@
 @use 'variables' as v;
 @use 'mixins' as m;
 
-.main {
+body {
+    background-color: #F08080;
+}
+
+main {
     background-color: v.$primary-color;
     color: v.$text-color;
     font-size: v.$font-size-b;
@@ -15,21 +19,21 @@
         h1 {
             font-size: 30px;
             margin-bottom: 15px;
-            color: v.$primary-color;
+            color: v.$text-color;
+        }
 
-            p {
-                font-size: 15px;
-                margin-bottom: 15px;
-                color: v.$text-color;
+        p {
+            font-size: 15px;
+            margin-bottom: 15px;
+            color: v.$text-color;
+        }
 
-                button {
-                    @include m.button-style(
-                    v.$primary-color, 
-                    v.$text-color, 
-                    v.$padding);
-                    margin-top: 20px;
-                }
-            }
+        button {
+            @include m.button-style(
+            v.$primary-color, 
+            v.$text-color, 
+            v.$padding);
+            margin-top: 20px;
         }
     }
 }

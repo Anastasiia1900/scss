@@ -1,5 +1,5 @@
 header {
-  background-color: #F08080;
+  background-color: #CD5C5C;
   color: #8B0000;
 }
 header .menu {
@@ -8,7 +8,7 @@ header .menu {
   align-content: center;
   flex-direction: row;
   gap: 25px;
-  background-color: #F08080;
+  background-color: #CD5C5C;
   padding: 15px;
 }
 header .menu nav {
@@ -25,50 +25,55 @@ header .menu nav ul {
   display: flex;
   gap: 15px;
 }
-header .menu nav ul a {
+header .menu nav a {
   color: #FFFFFF;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
 }
-header .menu nav ul a:hover {
+header .menu nav a:hover {
   text-decoration: underline;
 }
 
-.main {
+body {
   background-color: #F08080;
+}
+
+main {
+  background-color: #CD5C5C;
   color: #8B0000;
   font-size: 16px;
   padding: 30px;
   text-align: center;
 }
-.main section {
+main section {
   padding: 40px 20px;
   text-align: center;
 }
-.main section h1 {
+main section h1 {
   font-size: 30px;
   margin-bottom: 15px;
-  color: #F08080;
+  color: #8B0000;
 }
-.main section h1 p {
+main section p {
   font-size: 15px;
   margin-bottom: 15px;
   color: #8B0000;
 }
-.main section h1 p button {
-  background-color: #F08080;
+main section button {
+  background-color: #CD5C5C;
   color: #8B0000;
   padding: 10px;
   border: none;
   border-radius: 7px;
   cursor: pointer;
   font-size: 16px;
+  border: 2px solid #8B0000;
 }
-.main section h1 p button:hover {
-  background-color: rgb(192.2887323944, 22.7112676056, 22.7112676056);
+main section button:hover {
+  background-color: rgb(110.1971830986, 33.8028169014, 33.8028169014);
 }
-.main section h1 p button {
+main section button {
   margin-top: 20px;
 }
 
@@ -78,7 +83,7 @@ footer {
   align-content: center;
   flex-direction: row;
   gap: 20px;
-  background-color: #F08080;
+  background-color: #CD5C5C;
   color: #8B0000;
   padding: 20px;
 }

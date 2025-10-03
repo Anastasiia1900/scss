@@ -19,17 +19,17 @@ header {
                 margin: 0;
                 display: flex;
                 gap: 15px;
+            }
 
-                a {
-                    color: #FFFFFF;
-                    text-decoration: none;
-                    font-weight: bold;
-                    font-size: v.$font-size-b;
+            a {
+                color: #FFFFFF;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: v.$font-size-b;
 
-                    &:hover {
-                        text-decoration: underline;
-                    } 
-                }
+                &:hover {
+                    text-decoration: underline;
+                } 
             }
         }
     }

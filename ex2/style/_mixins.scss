@@ -16,6 +16,7 @@
     border-radius: 7px;
     cursor: pointer;
     font-size: v.$font-size-b;
+    border: 2px solid v.$text-color;
 
     &:hover {
     background-color: darken($primary-color, 30%);
