@@ -1,0 +1,36 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+header {
+    background-color: v.$primary-color;
+    color: v.$text-color;
+
+    .menu {
+        @include m.flex-center(row, 25px);
+        background-color: v.$primary-color;
+        padding: 15px;
+        
+        nav {
+            @include m.flex-center(row, 20px);
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                gap: 15px;
+
+                a {
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: v.$font-size-b;
+
+                    &:hover {
+                        text-decoration: underline;
+                    } 
+                }
+            }
+        }
+    }
+ }

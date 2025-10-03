@@ -1,0 +1,89 @@
+header {
+  background-color: #F08080;
+  color: #8B0000;
+}
+header .menu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  gap: 25px;
+  background-color: #F08080;
+  padding: 15px;
+}
+header .menu nav {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+header .menu nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+header .menu nav ul a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+header .menu nav ul a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  background-color: #F08080;
+  color: #8B0000;
+  font-size: 16px;
+  padding: 30px;
+  text-align: center;
+}
+.main section {
+  padding: 40px 20px;
+  text-align: center;
+}
+.main section h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #F08080;
+}
+.main section h1 p {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #8B0000;
+}
+.main section h1 p button {
+  background-color: #F08080;
+  color: #8B0000;
+  padding: 10px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.main section h1 p button:hover {
+  background-color: rgb(192.2887323944, 22.7112676056, 22.7112676056);
+}
+.main section h1 p button {
+  margin-top: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  gap: 20px;
+  background-color: #F08080;
+  color: #8B0000;
+  padding: 20px;
+}
+footer p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

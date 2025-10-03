@@ -1,0 +1,35 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.main {
+    background-color: v.$primary-color;
+    color: v.$text-color;
+    font-size: v.$font-size-b;
+    padding: 30px;
+    text-align: center;
+
+    section {
+        padding: 40px 20px;
+        text-align: center;
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 15px;
+            color: v.$primary-color;
+
+            p {
+                font-size: 15px;
+                margin-bottom: 15px;
+                color: v.$text-color;
+
+                button {
+                    @include m.button-style(
+                    v.$primary-color, 
+                    v.$text-color, 
+                    v.$padding);
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

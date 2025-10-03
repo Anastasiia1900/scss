@@ -1,0 +1,23 @@
+@use 'variables' as v;
+
+@mixin flex-center ($direction: row, $gap: 0) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+@mixin button-style ($primary-color, $text-color, $padding: 10px) {
+    background-color: $primary-color;
+    color: $text-color;
+    padding: $padding;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: v.$font-size-b;
+
+    &:hover {
+    background-color: darken($primary-color, 30%);
+    }
+}
